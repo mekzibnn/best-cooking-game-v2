@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #2b1d12; }
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  color: #f6e3c0;
+}
+.stage { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; }
+.frame { width: min(1280px, 100%); }
+#game { width: 100%; aspect-ratio: 1280 / 720; border-radius: 14px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,.55); background: #f6e3c0; }
+#game canvas { display: block; margin: 0 auto; }
+.help {
+  display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: center;
+  margin-top: 10px; font-size: 14px; color: #e8cfa8;
+}
+.help b { color: #ffd166; }
+.foot { max-width: 900px; text-align: center; font-size: 13px; color: #c9a77c; margin: 10px 0 0; }
